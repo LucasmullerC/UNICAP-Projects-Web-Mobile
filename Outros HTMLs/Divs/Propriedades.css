@@ -1,0 +1,12 @@
+.d1 {
+    background-color: red;
+    width: 700px;
+    padding: 0;
+    text-align: center;
+}
+.d2 {
+    background-color: green;
+    width: 700px;
+    padding: 25px;
+    text-align: center;
+}
