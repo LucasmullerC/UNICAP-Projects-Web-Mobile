@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta
+        name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/style.css" rel="stylesheet">
+        <title>Lucas Müller - Portfolio</title>
+    </head>
+    <body id="corpo">
+        <nav id="navtop" class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a id="nomelog" class="navbar-brand" href="#">Lucas Müller</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" onclick="NextPage(1)">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="NextPage(2)">Things I’ve Built</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="NextPage(3)">Get In Touch</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Media Sociais -->
+        <div class="icon-bar">
+            <a href="https://github.com/LucasmullerC" class="github">
+                <i class="fa fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/lucassmll/" class="instagram">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a href="mailto:lucas.mullerqdv@gmail.com" class="mail">
+                <i class="fa fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/lucas-m%C3%BCller-66721b213/" class="linkedin">
+                <i class="fa fa-linkedin"></i>
+            </a>
+        </div>
+        <div class="pageback">
+            <div id="pg1" class="box1 embassarblue">
+                <h1>About me</h1>
+                <hr>
+                <div class="contentbox1">
+                    <div class="txtarea">
+                        <p>
+                            Hello! My name is Lucas Müller, My interest in web development started back in 2011 when I decided to try editing custom Blogger themes — turns out i got really interested in website development and that taught me a lot about HTML & CSS!<br><br>
+                            Currently i'm a Computer Science student at <strong>Universidade Católica De Pernambuco (UNICAP)</strong>, Located in Pernambuco State, Brazil.<br><br>
+                            Here are a few technologies I’ve been learning recently:
+                        </p>
+                        <ul>
+                            <li>
+                                Javascript
+                            </li>
+                            <li>
+                                Node.js
+                            </li>
+                            <li>
+                                React
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="boximg">
+                        <img src="img/pfpback.jpg"/>
+                    </div>
+                </div>
+            </div>
+            <div id="pg2" class="box1 embassarblue">
+                <h1>Some Things I’ve Built</h1>
+                <hr>
+                <div class="contentbox1">
+                    <div class="txtarea">
+                        <p>
+                            <strong><a href="https://lucasmullerc.github.io/ClimaEmCasa">ClimaEmCasa</a></strong> is a project developed by three students for the Web and Mobile Programming course at Universidade Católica De Pernambuco.<br>
+                            The project was intended to be done in a simple way and with a nice look, using at least one <br>Rest API.
+                            <br><br><br><br>
+                            Some technologies used in the project:
+                        </p>
+                        <ul>
+                            <li>
+                                Bootstrap
+                            </li>
+                            <li>
+                                OpenLayers
+                            </li>
+                            <li>
+                                Open Weather Map
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="boximg">
+                        <img src="img/climaemcasa.jpg"/>
+                    </div>
+                </div>
+            </div>
+            <div id="pg3" class="box1 embassarblue" style="text-align: center;">
+                <h1>Get In Touch</h1>
+                <hr>
+                <p class="pfinal">
+                    
+                    I’m currently looking for new opportunities, my inbox is always open. <br><br>
+                    Whether you have a questions, opportunities or just want to say hi, I’ll try my best to get back to you!
+                </p>
+                <a href="mailto:lucas.mullerqdv@gmail.com"><button class="btnfinal"> Send me a E-Mail!
+                </button></a>
+            </div>
+            <div class ="options">
+                <button id="btn1"class="btncirc" onclick="NextPage(1)"></button>
+                <button id="btn2"class="btncirc"onclick="NextPage(2)"></button>
+                <button id="btn2"class="btncirc"onclick="NextPage(3)"></button>
+            </div>
+        </div>
+
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script type='text/javascript' src='js/script.js'></script>
+    </body>
+</html>

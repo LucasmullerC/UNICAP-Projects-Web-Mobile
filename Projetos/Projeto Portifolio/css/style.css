@@ -1,0 +1,249 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: fonte1;
+  src: url("../fonts/font1.ttf");
+}
+@font-face {
+  font-family: fonte2;
+  src: url("../fonts/font2.ttf");
+}
+body {
+  background-color: #485461;
+  transition: background-color 1s ease-in-out;
+}
+.pageback {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.embassarblue {
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+}
+#nomelog {
+  font-weight: 550;
+  overflow: hidden;
+  border-right: 0.15em solid;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+#navtop {
+  background-color: #4c4177;
+  background-image: linear-gradient(315deg, #4c4177 0%, #2a5470 74%);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+}
+#navtop a {
+  font-family: fonte2;
+  color: rgb(238, 236, 236);
+}
+#navtop a:hover {
+  font-family: fonte2;
+  color: rgb(238, 236, 236);
+  cursor: pointer;
+}
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 17px;
+}
+
+.icon-bar a:hover {
+  color: #98c5e2;
+  font-size: 20px;
+}
+.box1 {
+  width: 900px;
+  height: 440px;
+  margin-top: 60px;
+}
+.box1 h1 {
+  margin-left: 15px;
+  font-family: fonte1;
+  color: rgb(214, 209, 209);
+}
+hr {
+  color: #98c5e2;
+}
+.contentbox1 {
+  display: grid;
+  grid-template-columns: 70% 25%;
+}
+.txtarea {
+  margin-left: 15px;
+  font-family: fonte1;
+  color: rgb(238, 236, 236);
+  display: grid;
+  grid-template-rows: 70% 30%;
+}
+.pfinal {
+  font-family: fonte1;
+  color: rgb(238, 236, 236);
+  font-size: 25px;
+}
+.txtarea a {
+  text-decoration: none;
+  color: #83e8f0;
+}
+.boximg {
+  display: grid;
+  margin-top: 50px;
+  width: 100%;
+  height: 225px;
+  border: 3px solid #83e8f0;
+  border-radius: 10px;
+}
+.boximg img {
+  position: absolute;
+  top: 120px;
+  left: 620px;
+  border-radius: 10px;
+  width: 210px;
+  height: 210px;
+}
+.options {
+  text-align: center;
+}
+.btncirc {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2px;
+  margin: 4px 2px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.btncirc:hover {
+  background-color: #6650bd;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+#pg1 {
+  display: block;
+}
+#pg2 {
+  display: none;
+}
+#pg3 {
+  display: none;
+}
+.btnfinal {
+  font-family: fonte1;
+  color: rgb(238, 236, 236);
+  font-size: 25px;
+  background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
+  background-size: 800% 400%;
+  width: 200px;
+  height: 70px;
+  padding: 1em 2em;
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  animation: gradient 10s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+}
+
+.btnfinal:hover {
+  animation: gradient 3s infinite;
+  transform: scale(1.05);
+}
+
+.btnfinal:active {
+  animation: gradient 3s infinite;
+  transform: scale(0.8);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Efeito do barra piscando */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(255, 255, 255);
+  }
+}
+@media (max-width: 1040px) {
+  .box1 {
+    width: 90vw;
+    height: 440px;
+  }
+  .boximg {
+    width: 23vw;
+    height: 22vw;
+  }
+  .boximg img {
+    position: relative;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    width: 21vw;
+    height: 20vw;
+  }
+  .contentbox1 {
+    grid-template-columns: 70% 40%;
+  }
+}
+@media (max-width: 770px) {
+  .box1 {
+    width: 80vw;
+    height: 600px;
+  }
+  .txtarea {
+    grid-template-rows: 80% 20%;
+    font-size: 15px;
+  }
+}
+@media (max-width: 400px) {
+  .box1 {
+    width: 77vw;
+    height: 560px;
+  }
+  .txtarea {
+    grid-template-rows: 80% 20%;
+    font-size: 13px;
+  }
+}
