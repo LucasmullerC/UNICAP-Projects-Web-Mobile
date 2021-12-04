@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Aplicativo-Curriculo</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Lucas Müller</string>
+    <string name="second_fragment_label">Lucas Müller</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="TitleP">About me</string>
+    <string name="TitleP2">Some Things I’ve Built</string>
+    <string name="about_text">Hello! My name is Lucas Müller, My interest in web development started back in 2011 when I decided to try editing custom Blogger themes — turns out i got really interested in website development and that taught me a lot about HTML and CSS!</string>
+    <string name="about_text_2">Currently i\'m a Computer Science student at Universidade Católica De Pernambuco (UNICAP), Located in Pernambuco State, Brazil.</string>
+    <string name="curr1">ClimaEmCasa is a project developed by three students for the Web and Mobile Programming course at Universidade Católica De Pernambuco.
+The project was intended to be done in a simple way and with a nice look, using at least one
+Rest API.</string>
+</resources>
